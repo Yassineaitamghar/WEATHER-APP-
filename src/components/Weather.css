@@ -1,0 +1,117 @@
+.weather{
+    place-self: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #1c012b, #a522e2 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-bar input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 45px;
+    border-radius: 40px;
+    padding-left: 25px;
+    font-size: 15px;
+    color: #626262;
+    background-color: #ebfffc;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    &:hover{
+        background-color: #b6e4ff;
+    }
+}
+.search-bar img{
+    width: 45px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    &:hover{
+        background-color: #b6e4ff;
+    }
+    &:active{
+        background-color: #98c1ff;
+    }
+    &:focus-visible{
+        box-shadow: 0 0 0 2px #98c1ff;
+    }
+    &:focus-within{
+        box-shadow: 0 0 0 2px #98c1ff;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:disabled{
+        background-color: #98c1ff;
+        cursor: not-allowed;
+    }
+
+
+}
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+  
+}
+.temperature{
+    color: white;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    
+}
+.location{
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    text-align: center;
+}
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 18px;
+}
+.weather-data .col span{
+    display: block;
+    font-size: 14px;
+
+}
+.weather-data .col img{
+    width: 20px;
+    margin-top: 10px;
+
+}
